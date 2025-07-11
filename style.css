@@ -1,0 +1,137 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(231, 240, 231);
+    font-family: 'Helvetica Neue',sans-serif;
+    color: rgb(41, 47, 40);
+}
+
+:root{
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,p{
+    margin:0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+height: 100%;
+
+}
+
+nav li {
+    list-style: none;
+
+}
+
+nav li a {
+        text-decoration: none;
+color: rgb(128, 53, 26);
+}
+
+
+nav li:last-child a:hover{
+cursor: help;
+
+}
+
+
+
+
+.plants{
+
+margin: 24px auto;
+}
+
+.plants-img{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid rgb(114, 137, 111);
+}
+
+.plants ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+ justify-content: center;
+
+}
+
+.plants li{
+    width: 100%;
+    max-width: 300px;
+    padding: 16px;
+    list-style: none;
+}
+
+
+.plants p{
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+.handbook-take-care{
+    margin: auto 32px;
+}
+
+.handbook.how-to{
+
+}
+
+.how-to li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-bottom: 1px solid rgb(114, 137, 111); 
+    padding: 16px;  
+}
+
+
+
+.plants-img-title{
+    display: flex;
+    gap: 16px;
+    flex: 1;
+    align-items: center;
+    padding: 8px;
+}
+
+.plants-img-title img{
+flex-shrink: 0;
+width: 120px;
+height:120px;
+object-fit: cover;
+}
+
+
+.plants-text{
+    display: flex;
+    gap: 20px;
+}
+
+.warn{
+    color: rgb(142, 20, 20);
+}
+
+span{
+    font-weight: 800;
+}
+
