@@ -12,7 +12,7 @@ body{
     font-size: 16px;
 }
 
-body, h1,h2,h3,h4,h5,p, ul, li, ol{
+body, h1,h2,h3,h4,h5,p, ul, li, ol, a {
     margin:0;
     padding: 0;
 }
@@ -29,7 +29,7 @@ nav ul{
     justify-content: space-between;
     gap: 16px;
     align-items: center;
-height: 100%;
+    height: 100%;
 
 }
 
@@ -50,6 +50,26 @@ cursor: help;
 }
 
 
+#clock{
+    text-align: left;
+    margin: auto 32px;
+    color: rgb(91 106 84);
+    font-size: 0.8rem;
+    
+}
+
+#clock a {
+    color: rgb(91 106 84);
+    text-decoration: none;
+    cursor: ne-resize;
+    font-weight: 800;
+    background-color: rgb(190, 235, 99);
+    padding: 0 2px;
+}
+
+.line{
+    border: 1px solid pink;
+}
 
 
 .plants{
@@ -60,23 +80,28 @@ margin: 24px auto;
 .plants-img{
     width: 100%;
     max-width: 300px;
-aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    border: 1px solid rgb(114, 137, 111);
+    /*border: 1px solid rgb(114, 137, 111);*/
+    display: block;
 }
+
+
+
 
 .plants ul{
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
- justify-content: center;
+    /*gap: 16px;*/
+    justify-content: center;
+    
 
 }
 
 .plants li{
     width: 100%;
-    max-width: 300px;
-    padding: 16px;
+    flex-basis: 300px;
+    /*padding: 16px;*/
     list-style: none;
 }
 
@@ -89,8 +114,13 @@ aspect-ratio: 1 / 1;
 
 .handbook-take-care{
     margin: auto 32px;
+
 }
 
+
+.how-to{
+    padding: 0 1rem;
+}
 
 .how-to li{
     display: flex;
@@ -112,10 +142,12 @@ aspect-ratio: 1 / 1;
 
 .plants-img-title img{
 flex-shrink: 0;
-width: 120px;
-height:120px;
+width: 60px;
+height:60px;
 object-fit: cover;
 }
+
+
 
 
 .plants-text{
@@ -155,3 +187,42 @@ object-fit: cover;
     font-weight: 500;
 }
 
+footer{
+    margin: 40px 32px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+#moom{
+    color: rgb(91 106 84);
+    text-decoration: none;
+    cursor: ne-resize;
+    font-weight: 800;
+    background-color: rgb(190, 235, 99);
+    padding: 0 2px;
+}
+
+::selection{
+    background-color: rgba(50, 106, 110, 0.641);
+    color: pink;
+}
+
+
+@media screen and (max-width: 768px){
+    
+    .how-to li{
+  
+    flex-direction: column;
+    border-bottom: 1px solid rgb(114, 137, 111); 
+    padding: 16px;  
+    gap:16px;
+}
+
+
+
+}
