@@ -73,7 +73,7 @@ cursor: help;
 
 
 .plants{
-    margin: 24px auto;
+    margin: 16px auto;
     padding: 0 32px;
 }
 
@@ -247,7 +247,7 @@ display: grid;
 grid-template-columns: repeat(2,1fr);
 max-width: 1200px;
 gap: 16px;
-padding: 1rem;
+padding: 0.5rem;
  justify-self: center;
 
 }
@@ -289,6 +289,14 @@ padding: 1rem;
 .plants-text{
     display: block;
     text-align: right;
+}
+
+
+footer{
+    margin: 40px 24px;
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 }
