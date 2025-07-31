@@ -73,16 +73,16 @@ cursor: help;
 
 
 .plants{
-
-margin: 24px auto;
+    margin: 24px auto;
+    padding: 0 32px;
 }
+
 
 .plants-img{
     width: 100%;
-    max-width: 300px;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    /*border: 1px solid rgb(114, 137, 111);*/
+    border: 1px solid rgb(114, 137, 111);
     display: block;
 }
 
@@ -90,30 +90,50 @@ margin: 24px auto;
 
 
 .plants ul{
-    display: flex;
-    flex-wrap: wrap;
-    /*gap: 16px;*/
-    justify-content: center;
-    
+display: grid;
+grid-template-columns: repeat(4,1fr);
+padding: 1.5rem;
+ justify-self: center;
+ gap: 16px;
 
 }
 
 .plants li{
-    width: 100%;
-    flex-basis: 300px;
-    /*padding: 16px;*/
     list-style: none;
+    
+}
+
+.plants li a {
+    display: block;
 }
 
 
 .plants p{
     font-size: 0.9rem;
-    text-align: center;
+}
+
+.marquee{
+  overflow: hidden;
+  position: relative;
+  height: 1.5rem;
+}
+
+.marquee p {
+      animation: marquee 20s linear infinite;
+       width: 100%;
+        position: relative;
+       display: inline-block;
+
 }
 
 
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
 .handbook-take-care{
-    margin: auto 32px;
+    margin: auto 2rem;
 
 }
 
@@ -142,8 +162,8 @@ margin: 24px auto;
 
 .plants-img-title img{
 flex-shrink: 0;
-width: 60px;
-height:60px;
+width: 6rem;
+height:6rem;
 object-fit: cover;
 }
 
@@ -216,13 +236,59 @@ footer p {
 @media screen and (max-width: 768px){
     
     .how-to li{
-  
-    flex-direction: column;
     border-bottom: 1px solid rgb(114, 137, 111); 
-    padding: 16px;  
+    padding: 0.5rem;  
     gap:16px;
+
+}
+
+.plants ul{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+max-width: 1200px;
+gap: 16px;
+padding: 1rem;
+ justify-self: center;
+
+}
+
+.plants{
+    padding: 0 1rem;
+}
+
+.handbook-take-care{
+    margin: auto 1rem;
+
+}
+
+.how-to{
+    padding: 0;
 }
 
 
+
+.marquee p {
+      animation: marquee 12.5s linear infinite;
+       width: 100%;
+        position: relative;
+       display: inline-block;
+
+}
+
+
+.plants-img-title{
+  display: block; 
+ 
+}
+
+.plants-img-title h4{
+    padding: 0.3rem 0;
+}
+
+
+.plants-text{
+    display: block;
+    text-align: right;
+}
 
 }
